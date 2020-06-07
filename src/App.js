@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from "react";
 import logo from './logo.svg';
 import './App.css';
 // import components
@@ -10,6 +10,8 @@ class App extends Component {
         someString: ""
     };
     
+    // TODO methods to handle game play shuffle and scoring logic
+
     render () {   
         return (
             <div className="App">
