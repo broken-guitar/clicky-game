@@ -4,7 +4,7 @@ import "./Container.css";
 //stateless component
 const Container = props => (
     <div className="wrapper">
-        <div className="card-container">
+        <div className="cards-container">
             {props.children}
         </div>   
     </div>

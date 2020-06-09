@@ -1,0 +1,22 @@
+
+.card-id-text {
+   position: absolute;
+   color: white;
+   font-size: 9vw;
+   opacity: .33;
+   width: 100%;
+   z-index: 20;
+   vertical-align: middle;
+  
+}
+
+.card {
+   position: relative;
+   margin: 25px;
+   min-width: 200px;
+   height: 250px;
+   background-size: cover;
+   border-radius: 7px;
+   text-align: center;
+   z-index: 10;
+}

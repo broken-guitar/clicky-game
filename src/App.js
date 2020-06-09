@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import logo from './logo.svg';
 import './App.css';
 // import components
-import ImageCard from "./components/ImageCard";
-import Score from "./components/Score";
+import Card from "./components/Card";
+import ScoreBoard from "./components/ScoreBoard";
 import Container from "./components/Container";
 import cards from "./cards.json";
 
@@ -55,29 +55,28 @@ class App extends Component {
         return (
             <div className="App">
                 <header className="App-header">
-                    <h1 className="App-title">The Clickster</h1>
+                    <h1 className="App-title">Click that Cat</h1>
                     <p className="App-intro">
-                        Try not to click the same image twice!
+                        But try not to click the same image twice!
                     </p>
                 </header>
-                <Score total={this.state.score}
+                <ScoreBoard total={this.state.score}
                     goal={8}
                     status={this.state.status}
                 />
                 
-                <Wrapper>
+                <Container>
                     {this.state.cards.map(card => (
-                        <ImageCard
-                            shuffleScoreCard={this.shuffleScoreCard}
+                        <Card
+                            score={this.score}
                             id={card.id}
                             key={card.id}
                             image={card.image}
                         />
                 ))}
-                </Wrapper>
+                </Container>
                 <footer>
-                <p>Designed and built by Heather Mathies. You can find the
-                code<a href="https://github.com/hmathies/Clicky-Game" target="_blank" rel="noopener noreferrer"> here</a>.</p>
+               
                 </footer>
             </div>
         );
