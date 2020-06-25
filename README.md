@@ -8,7 +8,7 @@ A simple memory game with kittens!
 
 Did you read the paragraph above? Anyway, the objective of this game is to click on all the pictures of cats without clicking on the same cat more than once. If you can remember all those kitten faces, then you're probably someone who can really appreciate this game. Just sayin'.
 
-To play a fully deployed version of the game, click here: https://github.com/broken-guitar/clicky-game-2
+To play a fully deployed version of the game, click here: https://broken-guitar.github.io/hosted-clicky-game/
 
 ## Installing the project on your machine
 
